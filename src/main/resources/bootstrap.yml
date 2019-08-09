@@ -1,0 +1,24 @@
+server:
+  port: 28888
+spring:
+  application:
+    name: eureka
+  # cloud:
+  #   config:
+  #     uri: http://config:8888
+  #     fail-fast: true
+  #     password: ${CONFIG_SERVICE_PASSWORD}
+  #     username: user
+
+eureka:
+  instance:
+    hostname: ${HOSTNAME}.eureka
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    service-url:
+      defaultZone: ${EUREKA_ADDRESS_LIST}
+  server:
+    enable-self-preservation: false
+    eviction-interval-timer-in-ms: 10000
+    waitTimeInMsWhenSyncEmpty: 0
