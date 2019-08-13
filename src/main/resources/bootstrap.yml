@@ -1,5 +1,5 @@
 server:
-  port: 28888
+  port: ${SERVER_PORT:28888}
 spring:
   application:
     name: eureka
@@ -16,7 +16,7 @@ eureka:
   client:
     registerWithEureka: true
     fetchRegistry: true
-    service-url:
+    serviceUrl:
       defaultZone: ${EUREKA_ADDRESS_LIST}
   server:
     enable-self-preservation: false

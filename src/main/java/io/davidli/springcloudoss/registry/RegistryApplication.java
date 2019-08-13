@@ -1,4 +1,4 @@
-package com.piggymetrics.registry;
+package io.davidli.springcloudoss.registry;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
